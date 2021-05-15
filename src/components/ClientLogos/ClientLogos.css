@@ -1,0 +1,46 @@
+.clientLogos {
+  display: flex;
+  justify-content: center;
+  /* width: 1300px; */
+  align-items: center;
+  background-color: white;
+  margin-top: 2px;
+}
+
+.clientLogos .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50%;
+  padding: 30px 0;
+}
+
+.clientLogo {
+  height: 40px;
+  /* width: 150px; */
+  /* flex-basis: 150px; */
+  object-fit: cover;
+  /* flex-grow: 1; */
+  display: inline-block;
+  transition: transform 800ms ease-in-out;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.clientLogo:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1000px) {
+  .clientLogo {
+    width: 50%;
+  }
+  .clientLogo .container {
+    flex-direction: column;
+  }
+}

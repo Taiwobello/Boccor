@@ -1,0 +1,8 @@
+.portfolioItem {
+  transition: all 200ms ease-in-out;
+}
+
+.portfolioItem img {
+  width: 400px;
+  border-radius: 10px;
+}

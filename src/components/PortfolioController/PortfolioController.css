@@ -1,0 +1,16 @@
+.portfolioController {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.active {
+  color: var(--clr-yellow);
+}
+
+.portfolioController p {
+  cursor: pointer;
+  padding-right: 40px;
+  font-weight: 600;
+}

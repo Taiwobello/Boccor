@@ -1,0 +1,11 @@
+.socialIcons > * {
+  margin-left: 10px;
+  font-size: 25px;
+  color: #356a99;
+  cursor: pointer;
+  transition: 200ms color ease-in-out;
+}
+
+.socialIcons > *:hover {
+  color: var(--clr-yellow);
+}

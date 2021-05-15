@@ -1,0 +1,27 @@
+.customUnderline {
+  position: relative;
+}
+
+.customUnderline::before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 1px;
+  background-color: #c3cad0;
+  left: 50%;
+  /* top: 50px; */
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.customUnderline::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #fdc137;
+  left: 50%;
+  /* top: 49.8px; */
+  top: -0.2px;
+  transform: translateX(-50%);
+}

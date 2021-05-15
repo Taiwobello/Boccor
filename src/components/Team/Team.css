@@ -1,0 +1,41 @@
+.team {
+  background: var(--bg-gradient);
+  color: var(--clr-blue);
+  padding: 50px 0;
+}
+
+.teamMembers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.teamMember img {
+  width: 300px;
+}
+
+.teamMember {
+  text-align: center;
+}
+
+.teamMember h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.socialIcons {
+  margin-top: 10px;
+}
+
+.socialIcons > * {
+  margin-left: 10px;
+  font-size: 25px;
+  color: #356a99;
+  cursor: pointer;
+  transition: 200ms color ease-in-out;
+}
+
+.socialIcons > *:hover {
+  color: var(--clr-yellow);
+}
