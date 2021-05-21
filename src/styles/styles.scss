@@ -1,0 +1,24 @@
+@import "./base/base";
+@import "./base//mixins";
+
+@import "./components/navbar";
+@import "./components/app";
+@import "./components/hero";
+@import "./components/features";
+@import "./components/footer";
+@import "./components/portfolio-controller";
+@import "./components/portfolio-item";
+@import "./components/portfolio-list";
+@import "./components/portfolio";
+@import "./components/pricing";
+@import "./components/services";
+@import "./components/team";
+@import "./components/title";
+@import "./components/about";
+@import "./components/card";
+@import "./components/client-logos";
+@import "./components/contact";
+@import "./components/custom-button";
+@import "./components/custom-underline";
+
+$bg-color: green;

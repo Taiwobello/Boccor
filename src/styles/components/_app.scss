@@ -1,0 +1,46 @@
+.app {
+  color: white;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+
+  @include respond(respond-1) {
+    max-width: 75em;
+  }
+
+  @include respond(respond-2) {
+    max-width: 60em;
+  }
+
+  @include respond(respond-3) {
+    max-width: 45em;
+  }
+
+  @include respond(respond-4) {
+    max-width: 40em;
+  }
+  @include respond(respond-5) {
+    max-width: 90%;
+  }
+}
+
+.hero-container {
+  background-color: var(--clr-blue);
+  /* height: 730px; */
+  /* height: 100vh; */
+  z-index: 1;
+}
+
+// @media screen and (max-width: 1400px) {
+//   .container {
+//     width: 90%;
+//   }
+// }
+
+// @media (max-width: 1200px) {
+//   .container {
+//     width: 95%;
+//   }
+// }

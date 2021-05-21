@@ -1,0 +1,52 @@
+.team {
+  background: var(--bg-gradient);
+  color: var(--clr-blue);
+  padding: 5rem 0;
+}
+
+.teamMembers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.teamMember {
+  @include respond(respond-4) {
+    width: 80%;
+  }
+}
+
+.teamMember img {
+  width: 30rem;
+
+  @include respond(respond-4) {
+    width: 100%;
+  }
+}
+
+.teamMember {
+  text-align: center;
+}
+
+.teamMember h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.socialIcons {
+  margin-top: 1rem;
+}
+
+.socialIcons > * {
+  margin-left: 1rem;
+  font-size: 2.5rem;
+  color: #356a99;
+  cursor: pointer;
+  transition: 200ms color ease-in-out;
+}
+
+.socialIcons > *:hover {
+  color: var(--clr-yellow);
+}

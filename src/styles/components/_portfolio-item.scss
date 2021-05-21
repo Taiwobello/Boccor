@@ -1,0 +1,18 @@
+.portfolioItem {
+  transition: all 200ms ease-in-out;
+  width: 32%;
+
+  @include respond(respond-3) {
+    width: 47%;
+  }
+
+  @include respond(respond-4) {
+    width: 80%;
+  }
+}
+
+.portfolioItem img {
+  // width: 40rem;
+  width: 100%;
+  border-radius: 1rem;
+}

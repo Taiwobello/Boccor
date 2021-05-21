@@ -1,0 +1,41 @@
+@mixin respond-phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == respond-1 {
+    @media (max-width: 87.5em) {
+      //600px
+      @content;
+    }
+  }
+  @if $breakpoint == respond-2 {
+    //900px
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == respond-3 {
+    @media (max-width: 61.9375em) {
+      //1200px
+      @content;
+    }
+  }
+  @if $breakpoint == respond-4 {
+    //1800px
+    @media (max-width: 47.9em) {
+      @content;
+    }
+  }
+  @if $breakpoint == respond-5 {
+    //1800px
+    @media (max-width: 35.9em) {
+      @content;
+    }
+  }
+}
+
+@mixin name {
+}

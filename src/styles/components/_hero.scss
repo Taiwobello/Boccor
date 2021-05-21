@@ -1,0 +1,56 @@
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: -1;
+
+  @include respond(respond-3) {
+    flex-direction: column;
+  }
+}
+
+.heroImage {
+  width: 50%;
+
+  @include respond(respond-3) {
+    width: 60%;
+  }
+}
+.heroText {
+  width: 50%;
+  @include respond(respond-3) {
+    width: 100%;
+    order: 1;
+    margin-bottom: 4rem;
+  }
+}
+
+.heroText h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #c3cad0;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.heroText h4 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 3rem;
+  line-height: 1.1;
+}
+
+#hero-btn {
+  padding: 1.3rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 2.5rem;
+  color: var(--clr-blue);
+  border: 2px solid var(--clr-yellow);
+  transition: all 200ms ease-in-out;
+}
+
+#hero-btn:hover {
+  background-color: var(--clr-blue);
+  border-radius: 2.5rem;
+  color: white;
+}

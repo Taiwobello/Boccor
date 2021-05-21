@@ -1,0 +1,46 @@
+.clientLogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.clientLogos .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 3rem 0;
+
+  @include respond(respond-3) {
+    padding: 0;
+  }
+}
+
+.clientLogo {
+  height: 4rem;
+  object-fit: cover;
+  display: inline-block;
+  transition: transform 800ms ease-in-out;
+  gap: 2rem;
+  // margin-bottom: 2rem;
+}
+
+.clientLogo:hover {
+  transform: scale(1.1);
+}
+
+.logo__image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include respond(respond-3) {
+    flex-basis: 33.33%;
+    margin: 4rem 0;
+  }
+  @include respond(respond-4) {
+    flex-basis: 50%;
+    margin: 4rem 0;
+  }
+}

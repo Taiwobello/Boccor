@@ -1,0 +1,33 @@
+:root {
+  --clr-blue: #213b52;
+  --clr-yellow: #fdc137;
+  --clr-light-gray: #c3cad0;
+  --clr-dark-gray: #949494;
+  --bg-gradient: linear-gradient(
+    180deg,
+    rgba(242, 246, 250, 1) 24%,
+    rgba(254, 254, 254, 1) 48%
+  );
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--clr-blue);
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}

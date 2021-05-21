@@ -1,0 +1,135 @@
+.contact {
+  background: var(--bg-gradient);
+  color: var(--clr-blue);
+  padding: 5rem 0;
+}
+
+.contactWrapper {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(respond-3) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.contactDetails {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include respond(respond-3) {
+    flex-direction: column;
+  }
+}
+
+.address {
+  flex-basis: 100%;
+  /* height: 200px; */
+  padding: 5rem;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 3rem;
+}
+
+.contactDetail.email,
+.call {
+  padding: 5rem 0;
+  width: 47%;
+  text-align: center;
+  background-color: white;
+
+  @include respond(respond-3) {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+
+.email {
+  /* margin-right: 30px; */
+}
+
+.shadow {
+  box-shadow: 2px 9px 19px 0px rgba(0, 0, 0, 0.1);
+}
+
+.contactDetail h2 {
+  color: #797b7c;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contactForm {
+  background-color: white;
+  text-align: center;
+  padding: 2rem;
+  width: 50%;
+
+  @include respond(respond-3) {
+    width: 100%;
+  }
+}
+
+.subject,
+.message {
+  display: block;
+}
+
+.contactForm .email,
+.contactForm .name {
+  width: 49%;
+  padding: 1.3rem;
+  border: 1px solid #797b7c;
+
+  @include respond(respond-3) {
+    width: 100%;
+  }
+}
+
+.contactForm .name {
+  /* margin-right: 20px; */
+}
+
+.subject {
+  width: 100%;
+  border: 1px solid #797b7c;
+  padding: 1.3rem;
+  margin: 2rem 0;
+}
+
+.message {
+  width: 100%;
+  border: 1px solid #797b7c;
+  padding: 9px;
+  height: 15rem;
+}
+
+.nameEmailWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calllEmailWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(respond-3) {
+    flex-direction: column;
+  }
+}
+
+#contact-btn {
+  color: white;
+  border-radius: 0;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  border-radius: 5px;
+}
+
+#contact-btn:hover {
+  opacity: 0.8;
+}

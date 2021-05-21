@@ -1,0 +1,167 @@
+.nav {
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem 0;
+    align-items: center;
+    // z-index: 100;
+
+    .container {
+      margin: 0;
+    }
+  }
+
+  &__icon {
+    display: none;
+    position: relative;
+
+    @include respond(respond-3) {
+      display: block;
+      position: relative;
+    }
+  }
+
+  & h1 {
+    flex-basis: 4rem;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    /* margin-right: 80px; */
+
+    & span {
+      color: var(--clr-yellow);
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    font-size: 1.5rem;
+
+    @include respond(respond-3) {
+      display: none;
+    }
+
+    & > a {
+      margin-right: 2rem;
+      text-decoration: none;
+      color: var(--clr-light-gray);
+
+      &:hover {
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-checkbox {
+    display: none;
+  }
+}
+
+#active {
+  color: white;
+}
+
+.navList {
+  background-color: yellow;
+}
+
+.nav-checkbox:checked + .nav__button + .container {
+  & .nav__list {
+    opacity: 1;
+  }
+}
+
+.nav-checkbox:checked ~ .container .container .nav__list {
+  @include respond(respond-3) {
+    display: block;
+    overflow: scroll;
+    position: fixed;
+    top: 70px;
+    max-height: 80vh;
+    width: 95%;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 2rem;
+    justify-content: normal;
+
+    & > a {
+      color: var(--clr-blue);
+      display: block;
+      width: 100%;
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+
+    & #active {
+      color: var(--clr-yellow);
+    }
+
+    & .nav--btn {
+      display: block;
+      width: 100%;
+      & #getStarted {
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+}
+
+.nav-checkbox:checked + .nav__button + .container {
+  max-width: 70em;
+  align-items: flex-start;
+  padding: 0;
+  z-index: 100;
+  // position: absolute;
+
+  & h1 {
+    margin-left: 19rem;
+    margin-top: 1rem;
+  }
+}
+
+.nav-checkbox:checked + .nav__button + .container .container {
+  @include respond(respond-3) {
+    position: fixed;
+    height: 100vh;
+    max-width: 70em;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+  }
+}
+
+.nav__button {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: blue;
+  z-index: 200;
+
+  &:checked {
+    color: red;
+  }
+
+  &:checked + .container {
+    width: 100%;
+  }
+}
+
+.dot {
+  color: var(--clr-yellow);
+  font-size: 3rem;
+}
+
+@media (max-width: 1000px) {
+  .navList {
+    visibility: hidden;
+  }
+}

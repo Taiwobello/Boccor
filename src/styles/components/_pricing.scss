@@ -1,0 +1,19 @@
+.pricing {
+  background: var(--bg-gradient);
+  color: var(--clr-blue);
+  padding: 5rem 0 9rem 0;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: -2rem;
+  margin-top: 7rem;
+  z-index: -1;
+
+  @include respond(respond-3) {
+    flex-direction: column;
+    gap: 6rem;
+  }
+}
