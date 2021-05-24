@@ -3,36 +3,19 @@ import PortfolioItem from './PortfolioItem'
 
 import {connect} from "react-redux"
 
-function PortfolioList(props) {
-    let filteredPortfolio = []
+function PortfolioList({filterType, portfolioData} ) {
+    let filteredPortfolio = portfolioData
 
-        if (props.filterType === "all"){
-            filteredPortfolio = props.portfolioData.filter(portfolioObj => {
-                return portfolioObj
-            })
-        } else if (props.filterType === "app"){
-            filteredPortfolio = props.portfolioData.filter(portfolioObj => {
-                if (portfolioObj.category === "app"){
-                    return portfolioObj
-                }
-            })
-        } else if (props.filterType === "card"){
-            filteredPortfolio = props.portfolioData.filter(portfolioObj => {
-                if (portfolioObj.category === "card"){
-                    return portfolioObj
-                }
-            })
-        } else if (props.filterType === "web"){
-            filteredPortfolio = props.portfolioData.filter(portfolioObj => {
-                if (portfolioObj.category === "web"){
-                    return portfolioObj
-                }
-            })
+    filteredPortfolio = filteredPortfolio.filter((portfolioObj) => {
+        if (filterType === "all"){
+            return portfolioObj
         }
+        return filterType === portfolioObj.category
+    })
     return (
         <div className='portfolioList'>
-            {filteredPortfolio.map(portfolioObj => {
-                return <PortfolioItem portfolioObj={portfolioObj} image={portfolioObj.image} />
+            {filteredPortfolio.map((portfolioObj, index) => {
+                return <PortfolioItem portfolioObj={portfolioObj} image={portfolioObj.image} key={index} />
             })}
         </div>
     )

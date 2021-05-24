@@ -1,15 +1,3 @@
-import portfolioOne from "./img/portfolio/portfolio-1.jpg"
-import portfolioTwo from "./img/portfolio/portfolio-2.jpg"
-import portfolioThree from "./img/portfolio/portfolio-3.jpg"
-import portfolioFour from "./img/portfolio/portfolio-4.jpg"
-import portfolioFive from "./img/portfolio/portfolio-5.jpg"
-import portfolioSix from "./img/portfolio/portfolio-6.jpg"
-import portfolioSeven from "./img/portfolio/portfolio-7.jpg"
-import portfolioEight from "./img/portfolio/portfolio-8.jpg"
-import portfolioNine from "./img/portfolio/portfolio-9.jpg"
-
-
-
 
 export const portfolioData = [
     {

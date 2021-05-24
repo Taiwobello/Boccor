@@ -15,7 +15,7 @@ function Features() {
                 
                 <div className="featuresContainer">
                     <div className="feature one">
-                        <img src={featureOneImg} alt="feature image" />
+                        <img src={featureOneImg} alt="Feature" />
                         <div className="featureText">
                             <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
                             <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
@@ -26,7 +26,7 @@ function Features() {
                         </div>
                     </div>
                     <div className="feature two">
-                        <img src={featureTwoImg} alt="feature image" />
+                        <img src={featureTwoImg} alt="Feature" />
                         <div className="featureText">
                             <h2>Corporis temporibus maiores provident</h2>
                             <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
@@ -36,7 +36,7 @@ function Features() {
                         </div>
                     </div>
                     <div className="feature three">
-                        <img src={featureThreeImg} alt="feature image" />
+                        <img src={featureThreeImg} alt="Feature" />
                         <div className="featureText">
                             <h2>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h2>
                             <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
@@ -48,7 +48,7 @@ function Features() {
                         </div>
                     </div>
                     <div className="feature four">
-                        <img src={featureFourImg} alt="feature image" />
+                        <img src={featureFourImg} alt="Feature" />
                         <div className="featureText">
                             <h2>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h2>
                             <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>

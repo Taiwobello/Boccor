@@ -12,7 +12,7 @@ function Hero() {
                     <h4>We are team of talented designers making websites with Bootstrap</h4>
                     <CustomButton name="Get Started" id="hero-btn" />
                 </div>
-                <img src={HeroImage} className="heroImage" />
+                <img src={HeroImage} className="heroImage" alt="Hero" />
             </div>            
         </div>
     )

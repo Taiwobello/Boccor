@@ -3,6 +3,14 @@
   color: var(--clr-blue);
   padding: 4rem;
   padding-bottom: 3rem;
+
+  // @include respond(respond-3) {
+  //   padding: 3rem 1rem;
+  // }
+
+  @include respond(respond-5) {
+    padding: 3rem 0;
+  }
   /* position: relative; */
 }
 
@@ -58,6 +66,7 @@
   .service {
     width: 80%;
     margin: auto;
+    margin-bottom: 5rem;
   }
 }
 

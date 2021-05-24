@@ -14,22 +14,22 @@ function ClientLogos() {
         <div className="clientLogos">
             <div className="container"> 
                 <div className="logo__image-box">
-                    <img src={myob} className="clientLogo myob" />
+                    <img src={myob} className="clientLogo myob" alt="Logo" />
                 </div>
                 <div className="logo__image-box">
-                    <img src={belimo} className="clientLogo myob" />
+                    <img src={belimo} className="clientLogo myob" alt="Logo"/>
                 </div>
                 <div className="logo__image-box">
-                    <img src={lifeGroups} className="clientLogo myob" />
+                    <img src={lifeGroups} className="clientLogo myob" alt="Logo"/>
                 </div>
                 <div className="logo__image-box">
-                    <img src={lily} className="clientLogo myob" />
+                    <img src={lily} className="clientLogo myob" alt="Logo"/>
                 </div>
                 <div className="logo__image-box">
-                    <img src={citrus} className="clientLogo myob" />
+                    <img src={citrus} className="clientLogo myob" alt="Logo"/>
                 </div>
                 <div className="logo__image-box">
-                    <img src={trustly} className="clientLogo myob" />
+                    <img src={trustly} className="clientLogo myob" alt="Logo"/>
                 </div>
             </div>
         </div>

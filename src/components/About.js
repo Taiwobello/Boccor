@@ -10,7 +10,7 @@ import DescriptionIcon from '@material-ui/icons/Description';
 
 function About() {
     return (
-        <div className="about">
+        <div className="about" id="about">
             <div className="container">
                 <img src={aboutImage} alt="about" className="aboutImage"/>
                 <div className="aboutText">

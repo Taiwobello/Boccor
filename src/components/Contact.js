@@ -10,7 +10,7 @@ import CustomButton from "./CustomButton"
 
 function Contact() {
     return (
-        <div className="contact">
+        <div className="contact" id="contact">
             <div className="container">
                 <Title titleName="CONTACT" descriptionName="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas." />
                 <div className="contactWrapper">

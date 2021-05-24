@@ -1,3 +1,7 @@
+.nav__list > a:active {
+  color: red;
+}
+
 .nav {
   & > .container {
     display: flex;
